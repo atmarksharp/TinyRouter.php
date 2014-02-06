@@ -5,4 +5,5 @@
 
 	$rt->response('GET','/','_index.php');
 	$rt->response('GET','/about/','about.php');
+	$rt->response('GET|POST','/test/(.+?)/','test.php?q=\\1');
 ?>

@@ -41,10 +41,13 @@ class TinyRouter {
     	$params = $this->params;
     	$mt = str_replace(' ','',$method);
 
-    	if($req == $mt || $mt == 'GET|POST' || || $mt == 'POST|GET'){
-    		if(mb_ereg("^$reg$", $path, $m)){
-    			$filepath = mb_ereg_replace("$([0-9])",$_[intval("$1")],$filepath);
-    			$this->renderPhp($filepath);
+    	if($req == $mt || $mt == 'GET|POST' || $mt == 'POST|GET'){
+    		if(mb_ereg_match("^$reg$", $path)){
+    			$p = mb_ereg_replace("^$reg$",$filepath,$path);
+    			$parsed = parse_url($p);
+    			$newpath = $parsed['path'];
+    			parse_str($parsed['query'], $_GET);
+    			$this->renderPhp($newpath);
     		}
     	}
     }
