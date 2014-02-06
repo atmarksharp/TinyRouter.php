@@ -1,13 +1,13 @@
-# TinyRouter
+## TinyRouter
 
 Very simple router.
 
-# API
+### API
 
 - basePath()
 - response()
 
-# Usage
+### Usage
 
 ```php
 $rt = new TinyRouter('/path/to/your/root');
