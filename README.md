@@ -12,7 +12,7 @@ Very simple router.
 ```
 cd /path/to/your/web/root
 
-curl https://raw.github.com/atmarksharp/TinyRouter/master/install.sh | sh
+curl -s https://raw.github.com/atmarksharp/TinyRouter/master/install.sh | sh
 ```
 
 ### Usage
