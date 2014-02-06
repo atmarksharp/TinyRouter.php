@@ -1,6 +1,6 @@
 ## TinyRouter
 
-Very simple router.
+Very simple router. This router responses just php files.
 
 ### API
 
