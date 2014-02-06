@@ -15,6 +15,11 @@ cd /path/to/your/web/root
 curl -s https://raw.github.com/atmarksharp/TinyRouter/master/install.sh | sh
 ```
 
+This code downloads files below.
+
+- tinyrouter.php
+- .htaccess
+
 ### Usage
 
 ```php
