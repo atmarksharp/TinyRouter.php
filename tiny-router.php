@@ -28,7 +28,6 @@ class TinyRouter {
 		global $_SERVER,$_GET,$_POST;
 
 		$this->_basePath = $basePath;
-		$this->layoutFile = $this->defaultLayout;
         $this->requestType = $_SERVER['REQUEST_METHOD'];
         $this->url = $_SERVER['REQUEST_URI'];
         $this->params = ($this->requestType == 'GET')? $_GET : $_POST;
