@@ -4,13 +4,15 @@ Very simple router.
 
 ### API
 
-- basePath()
-- response()
+- basePath() : set basepath
+- response() : response php files
 
 ### Download
 
 ```
-curl https://raw.github.com/atmarksharp/TinyRouter/master/tiny-router.php > tiny-router.php
+cd /path/to/your/web/root
+
+curl https://raw.github.com/atmarksharp/TinyRouter/master/install.sh | sh
 ```
 
 ### Usage
